@@ -98,7 +98,7 @@ Make sure to change `pxart` to your own project name and check all links and ema
         </td>
         <td>
             <a href="https://queue.cppget.org/pxart">
-                <img src="https://img.shields.io/website/https/queue.cppget.org/pxart.svg?down_message=empty&down_color=blue&label=b|2 queue.cppget.org&up_color=orange&up_message=running">
+                <img src="https://img.shields.io/website/https/queue.cppget.org/pxart.svg?down_message=empty&down_color=blue&label=b|2%20queue.cppget.org&up_color=orange&up_message=running">
             </a>
         </td>
     </tr>
