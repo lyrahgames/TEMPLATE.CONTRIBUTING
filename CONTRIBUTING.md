@@ -14,7 +14,7 @@ Use your best judgment, and feel free to propose changes to this document in a p
 - How can I contribute?
     - Asking Questions, Reporting Bugs, and Suggesting Enhancements
     - Code Contribution and Pull Requests
-- Setup the Development Environment
+- Development Environment
 - Styleguides
     - Git
     - C++
@@ -58,19 +58,22 @@ You can follow [Github's Pull Request Model](https://docs.github.com/en/github/c
 - Make sure that basic tests run successfully.
 - Push your new changes and make your pull request.
 
-## Setup the Development Environment
+## Development Environment
 Currently, the project is developed under Linux and only tested on other platforms.
 If you need to use a Windows or MacOS environment and there is no straightforward explanation how to do it, please ask a question.
 
-- Linux
-- Git
-- GCC
-- Clang
-- build2
-- clang-format
+- Get all requirements that are stated on the [project's page](README.md).
+- Install `clang-format` for satisfying correct formatting rules.
+- [Optional] Enable automatic formatting of source files on file save in your editor by using a custom extension. This will make your life much easier.
+- Enable the Git hooks directory as described in the Git style guide in the following section.
+- Before cloning, create a directory with the name of the project inside your typical projects directory. We call this the developer folder.
+- Now clone the forked repository. This will be the project folder.
+- Inside the project folder, initialize one ore more configurations by the `bdep init -C ...` command.
+- Try to compile and test by using `bdep update -a` and/or `bdep test -a`.
+- Start hacking.
+- If you have not enabled automatic clang-format checks, you will have to manually format your files.
 
 ## Styleguides
-No styleguide is perfect.
 
 ### Git
 - Use the white-listing approach in newly created `.gitignore` files by first ignoring everything and then enabling which files are allowed to be added to the repository.
@@ -83,18 +86,23 @@ git config --local core.hooksPath .githooks
 - If your changes in the source code are more involved, consider creating multiple commits such that your intentions and ideas are easier to follow for everyone else when taking a look in the commit history of the repository.
 
 ### C++
-Custom C++ Style
-Formatting with clang-format. Can be enforced by git hook.
-Style is given by .clang-format file in root directory of the project.
+To not make this document excessively long, the styleguide for C++ will not be explained thoroughly here.
+In this project, a custom C++ style is used.
+When creating something new or introducing changes look at the code around and try to be consistent.
+If in doubt, post a question.
+Formatting should be done before doing a commit with `clang-format` in the style of the project which is given by the `.clang-format` file in the root of the repository.
 
 ### Build System
-Currently, the build2 toolchain is used to build the project.
-Please, learn about it when adding information to the build system.
+The project is built by [the build2 toolchain](https://build2.org).
+Tweaking the buildfiles of the project will need a certain understanding of its functioning.
+Read through the documentation to get yourself accustomed to the basics.
+Ask a question if there are more advanced problems.
 
 ### Documentation
-Grammatically correct.
-Full sentences.
-As simple as possible.
-Explainable.
+Typically, only the minority of developers are native English speakers.
+So it is natural language mistakes will arise regularly.
+When creating documentation, use full, descriptive sentences and try not to make them overly complicated.
+The same holds true for the general explanation.
+Be grammatically correct to the best of your knowledge.
 
 ## Additional Notes
