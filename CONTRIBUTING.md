@@ -54,7 +54,7 @@ Try to make sure, there is not already an issue with the same topic, and to adhe
 ### Code Contribution and Pull Requests
 You can follow [Github's Pull Request Model](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 - Fork the repository and setup your development environment accordingly as described below.
-- Clone the forked repo and start hacking yourself.
+- Clone the forked repo with its submodules and start hacking yourself.
 - Make sure that basic tests run successfully.
 - Push your new changes and make your pull request.
 
