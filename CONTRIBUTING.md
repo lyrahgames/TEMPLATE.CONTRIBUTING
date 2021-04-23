@@ -2,7 +2,7 @@
 
 First off, thanks for taking the time to contribute!
 
-The following is a set of guidelines for contributing to the project and its packages, which are hosted on GitHub.
+The following is a set of guidelines for contributing to the project and its packages, which are hosted on [GitHub](https://github.com/lyrahgames/pxart).
 These are mostly guidelines, not rules.
 Use your best judgment, and feel free to propose changes to this document in a pull request.
 
@@ -17,10 +17,6 @@ Use your best judgment, and feel free to propose changes to this document in a p
 - Setup the Development Environment
 - Styleguides
     - Git
-        - `.gitignore` Files
-        - Hooks
-        - Commit Messages
-        - Count of Commits
     - C++
     - Build System
     - Documentation
@@ -56,14 +52,15 @@ Try to make sure, there is not already an issue with the same topic, and to adhe
 - If reporting a problem, specify all the relevant package and environment information. This includes the package version, operating system name and version, C++ compiler name and version, command lines used, and the exact diagnostics observed. Generally, the more details you provide, the less the person trying to help you will have to guess and assume.
 
 ### Code Contribution and Pull Requests
+You can follow [Github's Pull Request Model](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 - Fork the repository and setup your development environment accordingly as described below.
 - Clone the forked repo and start hacking yourself.
 - Make sure that basic tests run successfully.
-- Push your new changes and start your pull request.
+- Push your new changes and make your pull request.
 
 ## Setup the Development Environment
 Currently, the project is developed under Linux and only tested on other platforms.
-If you need to use a Windows or MacOS environment and there is no straightforward explanation how to do it, ask a question.
+If you need to use a Windows or MacOS environment and there is no straightforward explanation how to do it, please ask a question.
 
 - Linux
 - Git
@@ -76,22 +73,14 @@ If you need to use a Windows or MacOS environment and there is no straightforwar
 No styleguide is perfect.
 
 ### Git
-#### `.gitignore` Files
-Typically, white-listing shall be used to enable files that we want to have in a project repository.
-
-#### Hooks
-Default hooks are given inside the `.githooks` directory of the project.
-For this project, you should enable this as default hooks directory.
-
-    git config --local core.hooksPath .githooks
-
-#### Commit Messages
-As far as possible, we will adhere to [the seven rules of a great git commit message](https://chris.beams.io/posts/git-commit/).
-These rules can be enforced by commit message hook.
-
-#### Count of Commits
-If your changes are more involved, please create multiple commits such that for anyone else it is easier to follow.
-
+- Use the white-listing approach in newly created `.gitignore` files by first ignoring everything and then enabling which files are allowed to be added to the repository.
+- Default hooks are given inside the `.githooks` directory of the repository to help you adhere to some guidelines.
+For this project, you should enable this path as the default hooks directory by using the following command.
+```
+git config --local core.hooksPath .githooks
+```
+- As far as possible, adhere to [the seven rules of a great git commit message](https://chris.beams.io/posts/git-commit/).
+- If your changes in the source code are more involved, consider creating multiple commits such that your intentions and ideas are easier to follow for everyone else when taking a look in the commit history of the repository.
 
 ### C++
 Custom C++ Style
