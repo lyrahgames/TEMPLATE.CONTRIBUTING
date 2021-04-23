@@ -1,3 +1,5 @@
+# Authors
+
 This file contains information about the project authors for copyright
 purposes.
 

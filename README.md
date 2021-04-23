@@ -1,4 +1,6 @@
 # Contributing Template
+This is a small project summary.
+Make sure to change `pxart` to your own project name and check all links and emails provided.
 
 ## Development Status
 
@@ -106,14 +108,16 @@
 
 ## Requirements
 <b>
-<table align="center">
+<table>
     <tr>
         <td>Language Standard:</td>
         <td>C++20</td>
     </tr>
     <tr>
         <td>Build System:</td>
-        <td>build2</td>
+        <td>
+            <a href="https://build2.org/">build2</a>
+        </td>
     </tr>
     <tr>
         <td>Operating System:</td>
@@ -121,17 +125,14 @@
     </tr>
     <tr>
         <td>Dependencies:</td>
-        <td></td>
+        <td>
+            glbinding ^ 3.1.0<br>
+            GLFW ^ 3.3.4<br>
+            GLM ^ 0.9.9
+        </td>
     </tr>
 </table>
 </b>
-
-<!-- 
-- Language Standard: C++20
-- Build System: build2
-- Operating System: Linux
-- Dependencies:
- -->
 
 ## Getting Started
 ## Build, Test, and Install
