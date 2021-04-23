@@ -10,19 +10,11 @@ Use your best judgment, and feel free to propose changes to this document in a p
 <!-- MarkdownTOC -->
 
 - Code of Conduct
-- Getting Started
-- TL;DR
-    - FAQ and Questions
-    - Mailing List
-    - Issues
 - What should I know before I get started?
-- What can you contribute to?
 - How can I contribute?
-    - Reporting Bugs
-    - Suggesting Enhancements
+    - Asking Questions, Reporting Bugs, and Suggesting Enhancements
     - Code Contribution and Pull Requests
-- Development Environment
-    - Getting Started and Setup
+- Setup the Development Environment
 - Styleguides
     - Git
         - `.gitignore` Files
@@ -42,26 +34,46 @@ This project and everyone participating in it is governed by the [Code of Conduc
 By participating, you are expected to uphold this code.
 Please report to lyrahgames@mailbox.org if unacceptable behavior is encountered.
 
-## Getting Started
-## TL;DR
-### FAQ and Questions
-### Mailing List
-### Issues
-
 ## What should I know before I get started?
-## What can you contribute to?
+This is an open-source project developed to learn, to have fun, and maybe even to provide useful utilities.
+No one is forced to work on this project.
+Hence, it may take its time to reply to messages or newly created issues.
+Furthermore, take into account that it may be possible that your issue is not answered or resolved easily.
+Please, do not hesitate to contribute because in fear of doing mistakes.
+Everyone can make mistakes and that is no problem.
+We will learn from them and are able to make it better the next time.
 
 ## How can I contribute?
-### Reporting Bugs
-### Suggesting Enhancements
-### Code Contribution and Pull Requests
+### Asking Questions, Reporting Bugs, and Suggesting Enhancements
+You don't need to be a developer to make a significant impact - just a GitHub account.
+If even that is not possible, report to lyrahgames@mailbox.org and we will try to find another way.
+Please, [open an issue on GitHub](https://github.com/lyrahgames/pxart/issues) and ask your question, report the bug you may have found, or suggest the enhancement that you would like to see in a future update.
+Try to make sure, there is not already an issue with the same topic, and to adhere to the following issue guidelines.
 
-## Development Environment
+**Issue Guidelines:**
+- Do not send a new question by replying to an existing message. Instead, create a new issue with a new, descriptive subject.
+- Choose a descriptive subject for your post. Examples of bad subjects: "Quick question", "Problem", "Help me", "SOS!!!". Examples of good subjects: "Error compiling foo.cpp with Clang 3.7", "Unable to use feature `X` to achieve result `Y`".
+- If reporting a problem, specify all the relevant package and environment information. This includes the package version, operating system name and version, C++ compiler name and version, command lines used, and the exact diagnostics observed. Generally, the more details you provide, the less the person trying to help you will have to guess and assume.
+
+### Code Contribution and Pull Requests
+- Fork the repository and setup your development environment accordingly as described below.
+- Clone the forked repo and start hacking yourself.
+- Make sure that basic tests run successfully.
+- Push your new changes and start your pull request.
+
+## Setup the Development Environment
 Currently, the project is developed under Linux and only tested on other platforms.
-If you need to use a Windows or MacOS environment
-### Getting Started and Setup
+If you need to use a Windows or MacOS environment and there is no straightforward explanation how to do it, ask a question.
+
+- Linux
+- Git
+- GCC
+- Clang
+- build2
+- clang-format
 
 ## Styleguides
+No styleguide is perfect.
 
 ### Git
 #### `.gitignore` Files
