@@ -1,6 +1,18 @@
 *
 !*/
 
+!*.hpp
+!*.cpp
+!*.ipp
+
+!buildfile
+!bootstrap.build
+!root.build
+!export.build
+!*manifest
+
+!.clang-format
+
 !*.md
 
 !.gitignore
